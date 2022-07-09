@@ -1,0 +1,9 @@
+{
+    "lang_russian": {
+        "check_special_folder_successfully": "Папка с именем \"copyright\" и проверочный файл найдены.",
+        "check_special_folder_not_successfully": "Папка с именем \"copyright\" и проверочный файл не найдены, либо же папка присутствует, но не сам файл.",
+        "create_license_file_info": "Создаю линцензионный файл в папку \"copyright\"...",
+        "create_license_file_successfully": "Лицензионный файл был успешно создан.",
+        "create_license_file_not_successfully": "Лицензионный файл не был успешно создан."
+    }
+}

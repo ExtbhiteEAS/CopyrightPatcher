@@ -1,0 +1,9 @@
+{
+    "lang_english": {
+        "check_special_folder_successfully": "Folder with name \"copyright\" and checking file are founded.",
+        "check_special_folder_not_successfully": "Folder with name \"copyright\" and checking file are not founded or folder is exist, but not the file.",
+        "create_license_file_info": "Creating license file to \"copyright\"...",
+        "create_license_file_successfully": "License file was successfully created.",
+        "create_license_file_not_successfully": "License file was not successfully created."
+    }
+}
