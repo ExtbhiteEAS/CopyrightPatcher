@@ -3,17 +3,16 @@ import requests
 import webbrowser
 import time, os
 
+with open("assets\\updater\\version.json", "r", encoding="utf-8") as updater_json:
+    data_updater = json.load(updater_json)
+
 def updateCheck():
-    with open("updater\updater.json", "r", encoding="utf-8") as updater_json:
-        data_updater = json.load(updater_json)
 
-    with open("updater\whatsnew.json", "r", encoding="utf-8") as whatsnew_json:
-        data_whatsnew = json.load(whatsnew_json)
-
-    INFO_UPDATER = json.loads(requests.get("").text)
+    INFO_UPDATER = json.loads(requests.get("https://raw.githubusercontent.com/ExtbhiteEAS/CopyrightPatcher/main/assets/updater/version.json").text)
+    INFO_WHATSNEW = json.loads(requests.get("https://raw.githubusercontent.com/ExtbhiteEAS/CopyrightPatcher/main/assets/updater/whatsnew.json").text)
 
     version = INFO_UPDATER["application"]["version"]
-    whatsnew = data_whatsnew["updaterDesc"]["whatsnew"]
+    whatsnew = INFO_WHATSNEW["updaterDesc"]["whatsnew"]
     current_version = data_updater["application"]["version"]
 
     print("[INF] Checking update...")

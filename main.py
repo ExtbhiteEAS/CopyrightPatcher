@@ -7,7 +7,7 @@ def main():
 
     updater.updateCheck()
 
-    choose = int(input("[1] Patching copyright. | [2] Help. | [3] Exit from programm. | (Default=None) :: "))
+    choose = int(input("[INF] [1] Patching copyright. | [2] Help. | [3] Exit from programm. | (Default=None) :: "))
 
     if choose == 1:
         assets = copyright.CopyrightAttachement(language=settings_config["main"]["language"], debug=settings_config["main"]["debugger"])

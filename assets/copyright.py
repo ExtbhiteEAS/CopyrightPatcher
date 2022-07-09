@@ -62,10 +62,6 @@ class CopyrightAttachement:
 
                 # // Building copyright patcher.
                 path = "build"
-                with open("copyright\copyright.import", "w", encoding="utf-8") as copy_def:
-                    copy_def.write(configs.copy_def_txt)
-                    print(configs.info_terminal_text + "Writed data in copyright import file.")
-
                 os.system("copy copyright\* build")
                 os.system(f"mkdir {path}\copyright_assets && move {path}\copyright.import {path}\copyright_assets")
 
