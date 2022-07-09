@@ -20,7 +20,7 @@ def updateCheck():
     if version != current_version:
         print(f"[INF] Available new version of CopyrightPatcher: {version}\n{whatsnew}\n[INF] Taking you to github page..")
         time.sleep(2.06)
-        webbrowser.open_new_tab("")
+        webbrowser.open_new_tab("https://github.com/ExtbhiteEAS/CopyrightPatcher/releases")
         os._exit(0)
     else:
         print("[INF] You have latest version of CopyrightPatcher.")

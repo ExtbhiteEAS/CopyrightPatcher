@@ -1,5 +1,5 @@
 {
     "updaterDesc": {
-        "whatsnew": "[UPDATE INFO]\n[INF] - Update something else."
+        "whatsnew": "[UPDATE INFO]\n[INF] - Update something else.\n[INF] - Updated updater and fixed build folder if you can't see in GitHub page."
     }
 }
